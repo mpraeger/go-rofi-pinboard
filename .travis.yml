@@ -10,6 +10,10 @@ env:
 os:
 - linux
 
+cache:
+  directories:
+    - ${GOPATH}/pkg/
+
 deploy:
   provider: releases
   api_key:
