@@ -15,4 +15,5 @@ deploy:
     - go-rofi-pinboard-*
   draft: true
   on:
+    tags: true
     repo: mpraeger/go-rofi-pinboard
