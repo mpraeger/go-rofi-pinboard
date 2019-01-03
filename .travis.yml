@@ -18,6 +18,7 @@ deploy:
     - go-rofi-pinboard-*
   draft: true
   skip_cleanup: true
+  file_glob: true
   on:
     tags: true
     repo: mpraeger/go-rofi-pinboard
