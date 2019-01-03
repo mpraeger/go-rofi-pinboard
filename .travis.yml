@@ -14,6 +14,11 @@ cache:
   directories:
     - ${GOPATH}/pkg/
 
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+
 deploy:
   provider: releases
   api_key:
