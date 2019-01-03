@@ -4,6 +4,9 @@ dist: xenial
 go:
 - 1.11.x
 
+env:
+  GO111MODULE=on
+
 os:
 - linux
 
