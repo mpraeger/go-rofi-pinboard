@@ -1,0 +1,19 @@
+language: go
+sudo: false
+dist: xenial
+go:
+- 1.11.x
+
+os:
+- linux
+
+deploy:
+  provider: releases
+  api_key:
+    secure: X9exzya/1Gb1olnSb/MUbt7qg3t/oBCAsuGaKDuc8HGl5uOWvmV6rzd1MkOYrhOubomN7MXr9J9zILF9S8ou3Ad05eyQr+t5aTARRYD2JTLePwy8iTUD8WYrJZHWkIvazfMTk4p1dnKPtGBxzZP4yHJMTFwHa+tcJuZqn7ywCcJ7AIYcz19h0fSJVYCQuu/OFCRBjhcAFgVPmys0rDiX2nGIE+KX/We+EdQQy5FyR+ApYxAls9rjyevQI7BR5GVraFrgRVGKUtC92h6sLuKhvNRzFPyzpXGP3iJgmHWjhlTWn62ONnCpyCUNi2vcdkohGrsKXAL8IDFyAMldTX4rK6BGrt1JvduBmGCsH9Gj3hu6P6F6gEPeyIzs+EKd6AoHAegfys5mvcHOXoxdS39CKKOn8jCLSPjbIvuyqS5w3gHQTKkPYqa0oatpeDvSgxWLtX9KbWWzEjBnOGGxfixGWd5vDuY1b/eM5HZV+kHYFMuW/0m/Lq2x3IseRGwm+CNtfpHiM/yqzLPhIbFkZAqrBAz3GEQt3OxuXbF/ZfdeL1Mhlwwh7N7hEWeCaRH9rrY6O3t6DTKKOJ3hemYHKn4AsOmwwrDdCIw8zwT+5fObg0aFzB490sferhOZUcpMi0lcpSYlUNQMxnTy0umGVedtLa1/2erNnlGftvVyblTEMME=
+  file:
+    - go-rofi-pinboard-linux
+    - go-rofi-pinboard-freebsd
+    - go-rofi-pinboard-macos
+  on:
+    repo: mpraeger/go-rofi-pinboard

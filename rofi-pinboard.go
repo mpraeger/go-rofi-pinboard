@@ -113,7 +113,8 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "go-rofi-pinboard"
 	app.Version = "0.1.1"
-	app.Description = "Search and open bookmarks via the Pinboard API"
+	app.Description = "Search and open bookmarks via the Pinboard API for display with rofi"
+	app.Usage = "Search and open bookmarks via the Pinboard API"
 	app.Commands = []cli.Command{
 		{
 			Name:   "all",
