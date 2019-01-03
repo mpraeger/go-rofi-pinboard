@@ -1,10 +1,15 @@
-build: test
+all: get test build
+
+build:
 	GOOS=linux go build -o go-rofi-pinboard-linux -ldflags="-s -w" ./...
 	GOOS=freebsd go build -o go-rofi-pinboard-freebsd -ldflags="-s -w" ./...
 	GOOS=darwin go build -o go-rofi-pinboard-macos -ldflags="-s -w" ./...
 
-test:
+get:
+	go get -v ./...
+
+test: get
 	go test ./...
 
 clean:
-	rm go-rofi-pinboard-linux go-rofi-pinboard-freebsd go-rofi-pinboard-macos
+	rm go-rofi-pinboard-*
